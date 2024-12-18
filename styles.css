@@ -1,0 +1,209 @@
+.tweet-code-block {
+  background: #1e1e1e;
+  border-radius: 8px;
+  padding: 12px;
+  margin: 8px 0;
+  font-family: 'Consolas', 'Monaco', monospace;
+  font-size: 14px;
+  overflow-x: auto;
+}
+
+.tweet-code-block pre {
+  margin: 0;
+  white-space: pre-wrap;
+}
+
+/* Style for NanoPay buttons in tweets */
+[data-testid="tweetText"] a[data-amount] {
+  display: inline-block;
+  padding: 8px 16px;
+  background: #4a90e2;
+  color: white;
+  border-radius: 20px;
+  text-decoration: none;
+  margin: 8px 0;
+  font-weight: bold;
+}
+
+[data-testid="tweetText"] a[data-amount]:hover {
+  background: #357abd;
+} 
+
+/* Update preview styles */
+.code-preview {
+  background: #f8f9fa;
+  border: 1px solid #e1e8ed;
+  border-radius: 12px;
+  margin: 10px 0;
+  padding: 12px;
+  min-height: 40px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.preview-item {
+  margin: 8px 0;
+  display: flex;
+  justify-content: center;
+}
+
+/* Dark mode support */
+[data-theme="dark"] .code-preview {
+  background: #192734;
+  border-color: #38444d;
+}
+
+/* Style for NanoPay buttons */
+.preview-item a[data-amount] {
+  display: inline-block;
+  padding: 8px 16px;
+  background: #4a90e2;
+  color: white;
+  border-radius: 20px;
+  text-decoration: none;
+  margin: 4px 0;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.preview-item a[data-amount]:hover {
+  background: #357abd;
+} 
+
+/* Add these styles */
+.nano-pay-button {
+  display: inline-block;
+  padding: 8px 16px;
+  background: #4a90e2;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.2s;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.nano-pay-button:hover {
+  background: #357abd;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+} 
+
+/* BitRequest button styles */
+.bitrequest-button {
+  display: inline-block;
+  padding: 8px 16px;
+  background: #2ecc71;  /* Different color to distinguish from NanoPay */
+  color: white;
+  border: none;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.2s;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.bitrequest-button:hover {
+  background: #27ae60;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+} 
+
+/* Facebook-specific styles */
+.payment-button-container {
+  margin: 12px 0;
+  padding: 12px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.post-text {
+  font-size: 15px;
+  color: #f0f2f5;
+  white-space: pre-wrap;
+  margin-bottom: 8px;
+}
+
+/* Light mode override */
+[data-light-mode="true"] .post-text {
+  color: #1c1e21;
+}
+
+.original-text {
+  display: none; /* Hide the code but keep it for copying */
+}
+
+/* Dark mode */
+[data-dark-mode="true"] .post-text {
+  color: #e4e6eb;
+}
+
+/* Facebook preview styles */
+div[role="presentation"] .code-preview {
+  margin: 8px 0;
+  padding: 12px;
+  border-radius: 8px;
+  background: #f0f2f5;
+  border: 1px solid #dddfe2;
+  width: 100%;
+  box-sizing: border-box;
+  clear: both;
+  display: none; /* Hidden by default */
+}
+
+/* Dark mode */
+[data-dark-mode="true"] div[role="presentation"] .code-preview {
+  background: #3a3b3c;
+  border-color: #4a4b4c;
+} 
+
+/* Platform-specific preview styles */
+/* Facebook */
+[role="presentation"] .code-preview {
+  margin: 8px 0;
+  padding: 12px;
+  border-radius: 8px;
+  background: #f0f2f5;
+  border: 1px solid #dddfe2;
+}
+
+/* Reddit */
+.usertext-edit .code-preview {
+  margin: 8px 0;
+  padding: 12px;
+  border-radius: 4px;
+  background: #f6f7f8;
+  border: 1px solid #edeff1;
+}
+
+/* Dark mode support */
+[data-dark-mode="true"] [role="presentation"] .code-preview,
+.res-nightmode .code-preview {
+  background: #3a3b3c;
+  border-color: #4a4b4c;
+} 
+
+/* Twitter post styles */
+[data-testid="tweetText"] .payment-button-container {
+  margin: 12px 0;
+  padding: 8px;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+[data-testid="tweetText"] .post-text {
+  font-size: 15px;
+  color: rgb(231, 233, 234);
+  white-space: pre-wrap;
+}
+
+/* Light mode override for Twitter */
+[data-light-theme="true"] [data-testid="tweetText"] .post-text {
+  color: rgb(15, 20, 25);
+} 
