@@ -22,6 +22,7 @@ A Chrome extension that adds Nano cryptocurrency tip buttons to Twitter and Face
 Add a NanoPay button to your post using this format:
 
 Better with no line breaks:
+
 Testing nanopay{"amount":"1","address":"@mnpezz","currency":"USD","text":"Tip $1"}
 
 nanopay{
@@ -30,17 +31,6 @@ nanopay{
   "currency": "USD",
   "text": "Tip $1"
 }
-
-nanopay{
-"title": "Tip Button",
-"amount": "5",
-"address": "@mnpezz",
-"currency": "USD",
-"text": "Tip $5",
-"image": "https://assets.coingecko.com/coins/images/756/standard/nano.png",
-"description": "Thanks for supporing mnpezz"
-}
-
 
 ### BitRequest Button
 
