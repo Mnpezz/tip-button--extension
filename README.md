@@ -23,8 +23,11 @@ Add a NanoPay button to your post using this format:
 
 Better with no line breaks:
 
-Testing nanopay{"amount":"1","address":"@mnpezz","currency":"USD","text":"Tip $1"}
+Post text nanopay{"amount":"1","address":"@mnpezz","currency":"USD","text":"Tip $1"}
 
+ OR
+ 
+Post text
 nanopay{
   "amount": "1",
   "address": "@mnpezz",
@@ -36,6 +39,7 @@ nanopay{
 
 Add a BitRequest button using this format:
 
+Post text
 bitrequest{
 "payment": "nano",
 "currency": "USD",
