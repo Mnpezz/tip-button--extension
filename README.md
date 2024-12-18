@@ -132,10 +132,3 @@ The extension uses:
 - Games and canvas code run in isolated environments
 - Payment buttons use official APIs
 
-## Testing
-
-- download the extension from github
-- go to brave://extensions/
-- enable developer mode
-- click load unpacked
-- select the repository folder
